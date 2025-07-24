@@ -7,17 +7,18 @@ import { Toaster } from '@/components/ui/toaster';
 import { StickyCallButtons } from '@/components/layout/StickyCallButtons';
 import Script from 'next/script';
 
-// Primary font: Poppins
+// Primary font: Poppins with lighter weights for clean look
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
+  weight: ['300', '400', '500', '600'], // Light to medium weights only
   variable: '--font-poppins',
   display: 'swap',
   preload: true,
   fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+  adjustFontFallback: true,
 });
 
-// Technical/monospace font
+// Technical/monospace font for numbers, phone numbers, codes
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
@@ -25,9 +26,10 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: 'swap',
   preload: false,
   fallback: ['SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'monospace'],
+  adjustFontFallback: true,
 });
 
-// Clean metadata - only essentials
+// Optimized Metadata for SEO and performance
 export const metadata: Metadata = {
   metadataBase: new URL('https://discountleakdetection.com'),
   title: {
@@ -35,17 +37,24 @@ export const metadata: Metadata = {
     template: '%s | Discount Leak Detection',
   },
   description: 'Professional leak detection services nationwide with advanced technology and 24/7 emergency response. Expert water, gas, and pool leak detection.',
-  keywords: ['leak detection', 'water leak detection', 'gas leak detection', 'pool leak detection', 'slab leak detection'],
-  authors: [{ name: 'Discount Leak Detection' }],
-  
-  // Favicon
+  applicationName: 'Discount Leak Detection',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['leak detection', 'water leak detection', 'gas leak detection', 'pool leak detection', 'slab leak detection', 'emergency leak detection'],
+  authors: [{ name: 'Discount Leak Detection', url: 'https://discountleakdetection.com' }],
+  creator: 'Discount Leak Detection',
+  publisher: 'Discount Leak Detection',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  // Favicon configuration
   icons: {
     icon: '/favicon/favicon.ico',
     apple: '/favicon/apple-touch-icon.png',
   },
   manifest: '/manifest.json',
-  
-  // Social sharing
+  // Open Graph metadata for social sharing
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -55,21 +64,33 @@ export const metadata: Metadata = {
     description: 'Professional leak detection services nationwide with advanced technology and 24/7 emergency response.',
     images: [
       {
-        url: '/images/discount-leak-detection.webp',
+        url: '/images/discount-leak-detection.webp', // Use a relative path
         width: 1200,
         height: 630,
         alt: 'Discount Leak Detection - Professional Leak Detection Services',
       },
     ],
   },
+  // Twitter card metadata
+  twitter: {
+    card: 'summary_large_image',
+    site: '@DiscountLeak',
+    creator: '@DiscountLeak',
+    title: 'Discount Leak Detection - Professional Services',
+    description: 'Professional leak detection services nationwide with advanced technology and 24/7 emergency response.',
+    images: ['/images/discount-leak-detection.webp'], // Use a relative path
+  },
 };
 
-// Simple viewport
+// Optimized Viewport settings
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#1976D2',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#1976D2' },
+    { media: '(prefers-color-scheme: dark)', color: '#1976D2' },
+  ],
 }
 
 export default function RootLayout({
@@ -80,23 +101,30 @@ export default function RootLayout({
   return (
     <html 
       lang="en" 
-      className={`${poppins.variable} ${ibmPlexMono.variable}`}
+      className={`${poppins.variable} ${ibmPlexMono.variable} antialiased`}
       suppressHydrationWarning
+      style={{
+        fontFamily: poppins.style.fontFamily,
+        fontFeatureSettings: "'kern' 1, 'liga' 1, 'calt' 1",
+        textRendering: 'optimizeLegibility',
+        WebkitFontSmoothing: 'antialiased',
+        MozOsxFontSmoothing: 'grayscale',
+      }}
     >
       <head>
-        {/* ONLY Google Fonts preconnect - needed for your fonts */}
+        {/* Preconnect to Google Fonts and GTM for faster connection setup */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         
-        {/* Preload your logo for performance */}
+        {/* PERFORMANCE: Preload the LCP image (logo) to prioritize its loading */}
         <link
           rel="preload"
           href="/logo/logo.webp"
           as="image"
           type="image/webp"
-          fetchPriority="high"
         />
 
-        {/* Simple business info for SEO */}
+        {/* Structured data for better SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -104,6 +132,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Discount Leak Detection",
+              "image": "https://discountleakdetection.com/images/discount-leak-detection.webp",
               "telephone": "+18888759844",
               "email": "info@discountleakdetection.com",
               "url": "https://discountleakdetection.com",
@@ -122,9 +151,9 @@ export default function RootLayout({
       </head>
       
       <body 
-        className="flex flex-col min-h-screen bg-background text-foreground antialiased"
+        className="flex flex-col min-h-screen bg-background text-foreground"
       >
-        {/* Accessibility skip link */}
+        {/* Skip to main content link for accessibility */}
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-50 bg-primary text-primary-foreground px-4 py-2 rounded-md font-poppins font-medium text-base"
@@ -142,10 +171,10 @@ export default function RootLayout({
         <Toaster />
         <StickyCallButtons />
 
-        {/* SIMPLIFIED Google Analytics - only for verification */}
+        {/* Google Analytics using gtag.js */}
         <Script 
-          src={`https://www.googletagmanager.com/gtag/js?id=G-R8W438QET6`}
-          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-R8W438QET6" 
+          strategy="afterInteractive" 
         />
         <Script
           id="google-analytics"
@@ -155,9 +184,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-R8W438QET6', {
-                send_page_view: true
-              });
+              gtag('config', 'G-R8W438QET6');
             `,
           }}
         />
