@@ -25,13 +25,13 @@ interface BlogPostTemplateProps {
   allPosts: BlogPost[];
 }
 
-// Simple Breadcrumbs Component - Updated Typography
+// Simple Breadcrumbs Component - Optimized Typography
 function Breadcrumbs({ postTitle }: { postTitle: string }) {
   return (
     <div className="bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" className="py-6 sm:py-8 lg:py-12">
-          <ol className="flex items-center space-x-2 sm:space-x-4 font-poppins text-sm sm:text-base">
+          <ol className="flex items-center space-x-2 sm:space-x-4 text-sm sm:text-base">
             <li className="flex items-center">
               <Link 
                 href="/" 
@@ -55,7 +55,7 @@ function Breadcrumbs({ postTitle }: { postTitle: string }) {
             <li aria-hidden="true">
               <ChevronRight className="h-4 w-4 text-gray-500" />
             </li>
-            <li className="font-poppins text-gray-900 font-medium truncate max-w-[200px] sm:max-w-[400px]" aria-current="page">
+            <li className="text-gray-900 font-medium truncate max-w-[200px] sm:max-w-[400px]" aria-current="page">
               {postTitle}
             </li>
           </ol>
@@ -65,7 +65,7 @@ function Breadcrumbs({ postTitle }: { postTitle: string }) {
   );
 }
 
-// Optimized Image Component
+// Optimized Image Component - Immediate Rendering
 function OptimizedImage({ 
   src, 
   alt, 
@@ -77,15 +77,15 @@ function OptimizedImage({
   className?: string;
   priority?: boolean;
 }) {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(priority); // Start as true for priority images
   const [error, setError] = useState(false);
 
   if (error) {
     return (
       <div className={`bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ${className}`}>
         <div className="p-4 text-center">
-          <p className="font-poppins text-gray-700 text-xs sm:text-sm">Image for:</p>
-          <p className="font-poppins text-gray-900 font-medium text-sm sm:text-base">{alt}</p>
+          <p className="text-gray-700 text-xs sm:text-sm">Image for:</p>
+          <p className="text-gray-900 font-medium text-sm sm:text-base">{alt}</p>
         </div>
       </div>
     );
@@ -93,7 +93,7 @@ function OptimizedImage({
 
   return (
     <div className={`relative ${className}`}>
-      {!isLoaded && (
+      {!isLoaded && !priority && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-2xl lg:rounded-3xl"></div>
       )}
       <Image
@@ -101,7 +101,7 @@ function OptimizedImage({
         alt={alt}
         fill
         className={`w-full h-full object-cover object-center transition-opacity duration-300 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
+          isLoaded || priority ? 'opacity-100' : 'opacity-0'
         }`}
         priority={priority}
         onLoad={() => setIsLoaded(true)}
@@ -112,7 +112,7 @@ function OptimizedImage({
   );
 }
 
-// Hero Section Component - Updated Typography
+// Hero Section Component - Immediate Rendering
 function HeroSection({ post }: { post: BlogPost }) {
   const readingTime = post.readingTime || Math.ceil((post.content?.length || 1000) / 1000);
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', { 
@@ -132,26 +132,26 @@ function HeroSection({ post }: { post: BlogPost }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
-          {/* Content Section */}
+          {/* Content Section - Immediate Render */}
           <div className="order-2 lg:order-1">
             {/* Category Badge */}
             {post.category && (
               <div className="flex items-center gap-3 mb-6 lg:mb-8">
                 <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1.5 sm:py-2">
                   <Search className="h-4 w-4 sm:h-6 sm:w-6 text-blue-600" />
-                  <span className="font-poppins text-blue-800 font-medium text-xs sm:text-sm lg:text-base">{post.category}</span>
+                  <span className="text-blue-800 font-medium text-xs sm:text-sm lg:text-base">{post.category}</span>
                 </div>
               </div>
             )}
 
-            {/* Title */}
-            <h1 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 leading-tight mb-4 sm:mb-6 lg:mb-8">
+            {/* Title - LCP Element - Immediate Render */}
+            <h1 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 leading-tight mb-4 sm:mb-6 lg:mb-8">
               {post.title}
             </h1>
 
             {/* Excerpt */}
             {post.excerpt && (
-              <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed mb-6 sm:mb-8 lg:mb-10">
+              <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed mb-6 sm:mb-8 lg:mb-10">
                 {post.excerpt}
               </p>
             )}
@@ -160,17 +160,17 @@ function HeroSection({ post }: { post: BlogPost }) {
             <div className="flex flex-wrap items-center gap-3 sm:gap-6 lg:gap-8 mb-6 lg:mb-8">
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
-                <span className="font-poppins font-medium text-xs sm:text-sm text-gray-900">{post.author}</span>
+                <span className="font-medium text-xs sm:text-sm text-gray-900">{post.author}</span>
               </div>
               
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
-                <span className="font-poppins font-medium text-xs sm:text-sm text-gray-900">{formattedDate}</span>
+                <span className="font-medium text-xs sm:text-sm text-gray-900">{formattedDate}</span>
               </div>
               
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-orange-600" />
-                <span className="font-poppins font-medium text-xs sm:text-sm text-gray-900">{readingTime} min read</span>
+                <span className="font-medium text-xs sm:text-sm text-gray-900">{readingTime} min read</span>
               </div>
             </div>
           </div>
@@ -188,8 +188,8 @@ function HeroSection({ post }: { post: BlogPost }) {
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                   <div className="p-4 text-center">
-                    <p className="font-poppins text-gray-700 text-xs sm:text-sm">Image for:</p>
-                    <p className="font-poppins text-gray-900 font-medium text-sm sm:text-base">{post.title}</p>
+                    <p className="text-gray-700 text-xs sm:text-sm">Image for:</p>
+                    <p className="text-gray-900 font-medium text-sm sm:text-base">{post.title}</p>
                   </div>
                 </div>
               )}
@@ -199,7 +199,7 @@ function HeroSection({ post }: { post: BlogPost }) {
               <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2 shadow-lg">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                  <span className="font-poppins text-xs font-medium text-slate-800">Featured Article</span>
+                  <span className="text-xs font-medium text-slate-800">Featured Article</span>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ function HeroSection({ post }: { post: BlogPost }) {
   );
 }
 
-// Tags Component - Updated Typography
+// Tags Component - Optimized Typography
 function BlogTags({ tags }: { tags?: string[] }) {
   if (!tags || tags.length === 0) return null;
 
@@ -221,12 +221,12 @@ function BlogTags({ tags }: { tags?: string[] }) {
     >
       <div className="flex items-center gap-2 text-gray-900 mr-2">
         <Tag className="h-4 w-4 text-sky-700" />
-        <span className="font-poppins text-sm font-medium">Article Tags:</span>
+        <span className="text-sm font-medium">Article Tags:</span>
       </div>
       {tags.map((tag, index) => (
         <span 
           key={`${tag}-${index}`}
-          className="font-poppins bg-white text-sky-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base font-medium border border-sky-300 hover:bg-sky-50 hover:border-sky-400 transition-colors duration-200 cursor-pointer shadow-sm"
+          className="bg-white text-sky-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base font-medium border border-sky-300 hover:bg-sky-50 hover:border-sky-400 transition-colors duration-200 cursor-pointer shadow-sm"
         >
           {tag}
         </span>
@@ -248,7 +248,7 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
     }
   }, [post]);
 
-  // Table enhancement
+  // Table enhancement - Non-blocking
   useEffect(() => {
     const enhanceTables = () => {
       const tables = document.querySelectorAll('.prose table');
@@ -304,7 +304,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                 <style>{`
                   .mobile-table-hint {
                     display: block;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                     font-size: 0.75rem;
                     color: #374151;
                     text-align: center;
@@ -324,7 +323,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                   }
                   
                   .prose {
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                     color: #111827;
                     line-height: 1.8;
                   }
@@ -332,7 +330,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
                     scroll-margin-top: 100px;
                     color: #111827;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                     font-weight: 500;
                   }
                   
@@ -360,7 +357,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                   }
                   
                   .prose p {
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                     line-height: 1.8;
                     margin-bottom: 1.25rem;
                     color: #374151;
@@ -384,7 +380,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     overflow-x: auto;
                     display: block;
                     white-space: nowrap;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                   
                   @media (min-width: 640px) {
@@ -400,7 +395,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     text-align: left;
                     min-width: 120px;
                     color: #111827;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                   
                   @media (min-width: 640px) {
@@ -414,7 +408,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
                     font-weight: 600;
                     color: #111827;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                   
                   .prose img {
@@ -435,7 +428,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     color: #1e293b;
                     border-radius: 0.75rem;
                     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                   
                   .prose code {
@@ -446,7 +438,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     font-size: 0.875rem;
                     font-weight: 500;
                     border: 1px solid #e2e8f0;
-                    font-family: var(--font-ibm-plex-mono), monospace;
                   }
                   
                   .prose pre {
@@ -459,7 +450,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     font-size: 0.875rem;
                     line-height: 1.7;
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    font-family: var(--font-ibm-plex-mono), monospace;
                   }
                   
                   .prose a {
@@ -467,7 +457,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                     text-decoration: none;
                     font-weight: 500;
                     border-bottom: 1px solid transparent;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                   
                   .prose a:hover {
@@ -478,7 +467,6 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
                   .prose strong {
                     font-weight: 600;
                     color: #111827;
-                    font-family: var(--font-poppins), system-ui, sans-serif;
                   }
                 `}</style>
                 
@@ -492,7 +480,7 @@ export function BlogPostTemplate({ post, allPosts }: BlogPostTemplateProps) {
 
               {/* Article Footer */}
               <div className="mt-12 sm:mt-20 pt-8 sm:pt-12">
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-8 font-poppins text-sm sm:text-base">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-8 text-sm sm:text-base">
                   <div className="space-y-2 sm:space-y-0 sm:space-x-8 sm:flex sm:items-center">
                     <div className="text-gray-900">
                       <span className="font-medium">Published:</span>{' '}

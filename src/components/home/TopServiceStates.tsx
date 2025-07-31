@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   MapPin, 
   Star,
@@ -30,11 +30,6 @@ interface State {
 
 export function TopServiceStates() {
   const [showAll, setShowAll] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   const allStates: State[] = [
     // All 50 States with humanized content
@@ -157,37 +152,37 @@ export function TopServiceStates() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 lg:mb-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-poppins font-medium text-sm mb-6 shadow-sm">
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-medium text-sm mb-6 shadow-sm">
             <Globe className="h-5 w-5 mr-2" />
             Available Across America
           </div>
-          <h2 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
+          <h2 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
             Leak Detection Help
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               In Every State
             </span>
           </h2>
-          <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
             From coast to coast, our trained professionals provide fast leak detection services with guaranteed results and 24/7 emergency support.
           </p>
           
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-blue-600 mb-1">50</div>
-              <div className="font-poppins text-slate-800 text-base">States Covered</div>
+              <div className="font-medium text-4xl text-blue-600 mb-1">50</div>
+              <div className="text-slate-800 text-base">States Covered</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-purple-600 mb-1">1,850+</div>
-              <div className="font-poppins text-slate-800 text-base">Expert Technicians</div>
+              <div className="font-medium text-4xl text-purple-600 mb-1">1,850+</div>
+              <div className="text-slate-800 text-base">Expert Technicians</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-green-600 mb-1">99.2%</div>
-              <div className="font-poppins text-slate-800 text-base">Success Rate</div>
+              <div className="font-medium text-4xl text-green-600 mb-1">99.2%</div>
+              <div className="text-slate-800 text-base">Success Rate</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-orange-600 mb-1">250k+</div>
-              <div className="font-poppins text-slate-800 text-base">Happy Customers</div>
+              <div className="font-medium text-4xl text-orange-600 mb-1">250k+</div>
+              <div className="text-slate-800 text-base">Happy Customers</div>
             </div>
           </div>
         </div>
@@ -195,8 +190,8 @@ export function TopServiceStates() {
         {/* All States Grid */}
         <div className="mb-12">
           <div className="text-center mb-10">
-            <h3 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">Where We Help</h3>
-            <p className="font-poppins text-base sm:text-lg text-slate-700">Trained professionals in every state across America</p>
+            <h3 className="font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">Where We Help</h3>
+            <p className="text-base sm:text-lg text-slate-700">Trained professionals in every state across America</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -223,18 +218,18 @@ export function TopServiceStates() {
                 <div className="relative z-10">
                   <MapPin className="h-10 w-10 text-slate-900 mx-auto mb-3 group-hover:scale-110 transition-transform drop-shadow-lg" />
                   
-                  <h4 className="font-poppins font-medium text-slate-900 text-base mb-1 transition-colors">
+                  <h4 className="font-medium text-slate-900 text-base mb-1 transition-colors">
                     {state.name}
                   </h4>
                   
-                  <div className="font-poppins font-medium text-sm text-slate-700 mb-2">{state.abbreviation}</div>
+                  <div className="font-medium text-sm text-slate-700 mb-2">{state.abbreviation}</div>
                   
                   <div className="flex items-center justify-center gap-1 mb-2">
                     <Star className="h-4 w-4 text-yellow-400 fill-current" />
-                    <span className="font-poppins font-medium text-sm text-slate-900">{state.rating}</span>
+                    <span className="font-medium text-sm text-slate-900">{state.rating}</span>
                   </div>
                   
-                  <div className="font-poppins text-sm text-slate-700">
+                  <div className="text-sm text-slate-700">
                     {state.technicians} technicians
                   </div>
                 </div>
@@ -248,7 +243,7 @@ export function TopServiceStates() {
           <div className="text-center mb-6 sm:mb-8 lg:mb-16">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-poppins font-medium text-base transition-all duration-300 flex items-center gap-3 mx-auto shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-medium text-base transition-all duration-300 flex items-center gap-3 mx-auto shadow-lg hover:shadow-xl transform hover:scale-105"
               style={{
                 boxShadow: '0 8px 32px rgba(31, 38, 135, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9)',
               }}
@@ -273,7 +268,7 @@ export function TopServiceStates() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/locations"
-              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-poppins font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
               style={{
                 boxShadow: '0 8px 32px rgba(31, 38, 135, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9)',
               }}
@@ -284,7 +279,7 @@ export function TopServiceStates() {
             </a>
             <a 
               href="tel:+18888759844"
-              className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-poppins font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
               <span className="font-ibm-plex-mono font-medium">Call Us Now</span>

@@ -2,65 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Essential CSS Custom Properties */
+/* CRITICAL: Only essential CSS for LCP */
+.lcp-text {
+  font-display: swap !important;
+  contain: layout style;
+  transform: translateZ(0);
+}
+
+.header-container {
+  contain: layout style;
+  will-change: transform;
+}
+
+/* CRITICAL: Essential CSS Custom Properties - Reduced */
 :root {
-  --font-poppins: var(--font-poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
-  --font-ibm-plex-mono: var(--font-ibm-plex-mono, 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, monospace);
+  --font-poppins: var(--font-poppins, ui-sans-serif, system-ui, sans-serif);
+  --font-ibm-plex-mono: var(--font-ibm-plex-mono, 'SF Mono', Monaco, monospace);
 }
 
-body {
-  font-family: var(--font-poppins);
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
-}
-
+/* CRITICAL: Minimal color system */
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 225 15% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 225 15% 15%;
     --primary: 223 87% 45%;
     --primary-foreground: 0 0% 100%;
     --secondary: 225 60% 90%;
     --secondary-foreground: 225 15% 15%;
     --muted: 225 60% 85%;
     --muted-foreground: 225 15% 35%;
-    --accent: 169 58% 40%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84% 45%;
-    --destructive-foreground: 0 0% 100%;
     --border: 225 20% 82%;
-    --input: 225 20% 82%;
     --ring: 223 87% 45%;
     --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 225 15% 8%;
-    --foreground: 0 0% 95%;
-    --card: 225 15% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 225 15% 10%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 223 100% 70%;
-    --primary-foreground: 225 15% 8%;
-    --secondary: 225 15% 18%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 225 15% 20%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 169 58% 65%;
-    --accent-foreground: 225 15% 8%;
-    --destructive: 0 70% 55%;
-    --destructive-foreground: 0 0% 95%;
-    --border: 225 15% 20%;
-    --input: 225 15% 20%;
-    --ring: 223 100% 70%;
   }
 }
 
@@ -71,30 +44,16 @@ body {
   
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-poppins);
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
-  /* Typography Base Styles */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-poppins);
-    font-weight: 500;
-  }
-
-  p, span, div, a, button, input, textarea, label {
-    font-family: var(--font-poppins);
-  }
-
-  /* Essential accessibility improvements */
+  /* CRITICAL: Essential accessibility only */
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-ring;
-  }
-
-  button:focus-visible,
-  [role="button"]:focus-visible,
-  input:focus-visible,
-  textarea:focus-visible,
-  select:focus-visible {
     @apply outline-2 outline-offset-2 outline-ring;
   }
 
@@ -113,7 +72,7 @@ body {
 }
 
 @layer utilities {
-  /* Typography Utility Classes */
+  /* CRITICAL: Essential typography only */
   .font-poppins {
     font-family: var(--font-poppins);
   }
@@ -122,104 +81,44 @@ body {
     font-family: var(--font-ibm-plex-mono);
   }
 
-  /* Clean Typography Hierarchy */
+  /* CRITICAL: Simplified typography classes */
   .heading-1 {
-    @apply font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
+    @apply font-medium text-2xl md:text-3xl lg:text-4xl;
   }
 
   .heading-2 {
-    @apply font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl;
+    @apply font-medium text-xl md:text-2xl lg:text-3xl;
   }
 
   .heading-3 {
-    @apply font-poppins font-medium text-xl sm:text-2xl;
-  }
-
-  .heading-4 {
-    @apply font-poppins font-medium text-lg sm:text-xl;
+    @apply font-medium text-lg md:text-xl;
   }
 
   .body-large {
-    @apply font-poppins text-base sm:text-lg lg:text-xl;
+    @apply text-base md:text-lg;
   }
 
   .body-regular {
-    @apply font-poppins text-base sm:text-lg;
+    @apply text-sm md:text-base;
   }
 
-  .body-medium {
-    @apply font-poppins font-medium text-base sm:text-lg;
-  }
-
-  .body-small {
-    @apply font-poppins text-sm;
-  }
-
-  .body-xs {
-    @apply font-poppins text-xs;
-  }
-
-  .btn-primary {
-    @apply font-poppins font-medium text-base lg:text-lg;
-  }
-
-  .btn-secondary {
-    @apply font-poppins font-medium text-sm lg:text-base;
-  }
-
-  .btn-cta {
-    @apply font-poppins font-medium text-xl;
-  }
-
-  .text-stat {
-    @apply font-poppins font-medium text-4xl lg:text-5xl;
-  }
-
-  .text-phone {
-    @apply font-ibm-plex-mono font-medium text-xl lg:text-2xl;
-  }
-
-  .text-email {
-    @apply font-ibm-plex-mono font-medium text-base lg:text-lg;
-  }
-
-  .text-technical {
-    @apply font-ibm-plex-mono font-medium text-2xl;
-  }
-
-  .text-label {
-    @apply font-poppins font-medium text-gray-900;
-  }
-
-  .text-badge {
-    @apply font-poppins font-medium text-sm;
-  }
-
-  .text-caption {
-    @apply font-poppins text-sm text-gray-700;
-  }
-
-  /* Performance utilities */
-  .will-change-transform {
-    will-change: transform;
-  }
-  
-  .will-change-auto {
-    will-change: auto;
-  }
-
-  /* GPU acceleration for critical animations */
+  /* CRITICAL: Essential performance utilities */
   .gpu-accelerated {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
-    perspective: 1000;
+  }
+
+  /* CRITICAL: Text optimization */
+  .text-optimize {
+    font-display: swap;
+    contain: layout style;
+    transform: translateZ(0);
   }
 }
 
-/* Minimal scrollbar styling */
+/* CRITICAL: Minimal scrollbar styling */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -228,37 +127,15 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted-foreground) / 0.5);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--muted-foreground) / 0.7);
-}
-
-/* Selection styles */
+/* CRITICAL: Selection styles */
 ::selection {
   background-color: hsl(var(--primary) / 0.2);
-  color: hsl(var(--primary-foreground));
 }
 
-::-moz-selection {
-  background-color: hsl(var(--primary) / 0.2);
-  color: hsl(var(--primary-foreground));
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  :root {
-    --primary: 223 100% 25%;
-    --primary-foreground: 0 0% 100%;
-    --accent: 169 100% 25%;
-    --accent-foreground: 0 0% 100%;
-    --foreground: 0 0% 0%;
-    --border: 0 0% 50%;
-  }
-}
-
-/* Reduced motion support */
+/* CRITICAL: Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -266,10 +143,20 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  
+  .lcp-text,
+  .header-container,
+  .gpu-accelerated {
+    transform: none !important;
+    will-change: auto !important;
+  }
 }
 
-/* Print styles */
+/* CRITICAL: Print styles */
 @media print {
   .no-print { display: none !important; }
   body { background: white !important; color: black !important; }
 }
+
+/* CRITICAL: Remove unused complex animations and transitions */
+/* Remove all the complex gradient animations, shadow effects, etc. that aren't critical */

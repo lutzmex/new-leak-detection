@@ -327,7 +327,7 @@ export const long_branch_nj_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-73.9924!3d40.2982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2250000000001:0x4d5b24f57c8d23d8!2sLong%20Branch%2C%20NJ!5e0!3m2!1sen!2sus!4v1715882400000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-73.9924!3d40.2982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c225b6a718b52b:0x4d5b24f57c8d23d8!2sLong%20Branch%2C%20NJ!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

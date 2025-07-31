@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, memo, useMemo } from 'react';
+import React, { memo, useMemo } from 'react';
 import { 
   Phone,
   Star,
@@ -68,13 +68,13 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {service.isPopular && (
-            <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-2 py-1 rounded-full font-poppins font-medium text-xs flex items-center gap-1 shadow-sm">
+            <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-2 py-1 rounded-full font-medium text-xs flex items-center gap-1 shadow-sm">
               <Star className="h-3 w-3 fill-current" />
               Popular
             </div>
           )}
           {service.isEmergency && (
-            <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-2 py-1 rounded-full font-poppins font-medium text-xs flex items-center gap-1 shadow-sm">
+            <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-2 py-1 rounded-full font-medium text-xs flex items-center gap-1 shadow-sm">
               <Clock className="h-3 w-3" />
               24/7
             </div>
@@ -99,7 +99,7 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm border border-slate-200 rounded-lg px-2 py-1 text-slate-900">
           <div className="flex items-center gap-1">
             <Star className="h-3 w-3 text-yellow-400 fill-current" />
-            <span className="font-poppins font-medium text-xs">{service.rating}</span>
+            <span className="font-medium text-xs">{service.rating}</span>
           </div>
         </div>
       </div>
@@ -109,20 +109,20 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
         {/* Header */}
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="bg-slate-100 text-slate-900 px-2 py-1 rounded-full font-poppins font-medium text-xs">
+            <span className="bg-slate-100 text-slate-900 px-2 py-1 rounded-full font-medium text-xs">
               {service.category}
             </span>
             <div className="flex items-center gap-1 text-green-700">
               <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-              <span className="font-poppins font-medium text-xs">Available</span>
+              <span className="font-medium text-xs">Available</span>
             </div>
           </div>
           
-          <h3 className="font-poppins font-medium text-lg text-slate-900 mb-2 group-hover:text-slate-800 transition-colors leading-tight">
+          <h3 className="font-medium text-lg text-slate-900 mb-2 group-hover:text-slate-800 transition-colors leading-tight">
             {service.title}
           </h3>
           
-          <p className="font-poppins text-slate-800 text-sm leading-relaxed line-clamp-2">
+          <p className="text-slate-800 text-sm leading-relaxed line-clamp-2">
             {service.description}
           </p>
         </div>
@@ -131,36 +131,36 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
         <div className="grid grid-cols-3 gap-2">
           <div className="bg-slate-50 rounded-xl p-2.5 text-center group-hover:bg-blue-50 transition-colors">
             <Clock className="h-4 w-4 text-blue-600 mx-auto mb-1" />
-            <div className="font-poppins font-medium text-xs text-slate-900">{service.responseTime}</div>
-            <div className="font-poppins text-xs text-slate-800">Response</div>
+            <div className="font-medium text-xs text-slate-900">{service.responseTime}</div>
+            <div className="text-xs text-slate-800">Response</div>
           </div>
           <div className="bg-slate-50 rounded-xl p-2.5 text-center group-hover:bg-green-50 transition-colors">
             <Users className="h-4 w-4 text-green-600 mx-auto mb-1" />
-            <div className="font-poppins font-medium text-xs text-slate-900">{service.expertsAvailable}</div>
-            <div className="font-poppins text-xs text-slate-800">Experts</div>
+            <div className="font-medium text-xs text-slate-900">{service.expertsAvailable}</div>
+            <div className="text-xs text-slate-800">Experts</div>
           </div>
           <div className="bg-slate-50 rounded-xl p-2.5 text-center group-hover:bg-purple-50 transition-colors">
             <CheckCircle className="h-4 w-4 text-purple-600 mx-auto mb-1" />
-            <div className="font-poppins font-medium text-xs text-slate-900">{service.completedJobs.toLocaleString()}</div>
-            <div className="font-poppins text-xs text-slate-800">Jobs Done</div>
+            <div className="font-medium text-xs text-slate-900">{service.completedJobs.toLocaleString()}</div>
+            <div className="text-xs text-slate-800">Jobs Done</div>
           </div>
         </div>
 
         {/* Features */}
         <div>
-          <h4 className="font-poppins font-medium text-sm text-slate-900 mb-2 flex items-center gap-2">
+          <h4 className="font-medium text-sm text-slate-900 mb-2 flex items-center gap-2">
             <Sparkles className="h-4 w-4 text-blue-600" />
             What We Do:
           </h4>
           <ul className="space-y-1">
             {service.features.slice(0, 2).map((feature, idx) => (
-              <li key={idx} className="flex items-center font-poppins text-slate-800 text-xs">
+              <li key={idx} className="flex items-center text-slate-800 text-xs">
                 <Check className="h-2.5 w-2.5 text-green-500 mr-2 flex-shrink-0" />
                 <span className="line-clamp-1">{feature}</span>
               </li>
             ))}
           </ul>
-          <p className="font-poppins font-medium text-slate-800 text-xs mt-1">
+          <p className="font-medium text-slate-800 text-xs mt-1">
             +{service.features.length - 2} more things we do
           </p>
         </div>
@@ -169,13 +169,13 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
         <div className="space-y-2">
           <button 
             onClick={handleCallNow}
-            className="w-full bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 py-2.5 px-4 rounded-xl font-poppins font-medium transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 py-2.5 px-4 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md flex items-center justify-center gap-2"
           >
             <Phone className="h-4 w-4" />
             Call Now
           </button>
           
-          <div className="w-full bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-800 py-2 px-4 rounded-xl font-poppins font-medium transition-all duration-300 flex items-center justify-center gap-2 text-sm">
+          <div className="w-full bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-800 py-2 px-4 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 text-sm">
             View Details
             <ArrowRight className="h-3 w-3" />
           </div>
@@ -188,15 +188,6 @@ const ServiceCard = memo(({ service, index }: { service: Service; index: number 
 ServiceCard.displayName = 'ServiceCard';
 
 export const ServiceHighlights = memo(() => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = requestAnimationFrame(() => {
-      setIsVisible(true);
-    });
-    return () => cancelAnimationFrame(timer);
-  }, []);
-
   // Memoized services data
   const popularServices = useMemo<Service[]>(() => [
     {
@@ -371,53 +362,47 @@ export const ServiceHighlights = memo(() => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className={`text-center mb-6 sm:mb-8 lg:mb-16 transition-opacity duration-700 ${
-          isVisible ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-poppins font-medium text-sm mb-6 shadow-sm">
+        <div className="text-center mb-6 sm:mb-8 lg:mb-16 opacity-100">
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-medium text-sm mb-6 shadow-sm">
             <Target className="h-5 w-5 mr-2" />
             Most Popular Leak Detection Services
           </div>
-          <h2 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
+          <h2 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
             Expert Solutions for
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Every Leak Challenge
             </span>
           </h2>
-          <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
             Whether it's an emergency or you need special leak finding methods, check out our most trusted services that really work, with skilled technicians who know what they're doing.
           </p>
         </div>
 
         {/* Services Grid - 2 Rows of 4 */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6 sm:mb-8 lg:mb-16 transition-opacity duration-700 delay-300 ${
-          isVisible ? 'opacity-100' : 'opacity-0'
-        }`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6 sm:mb-8 lg:mb-16 opacity-100">
           {popularServices.map((service, index) => (
             <ServiceCard key={service.id} service={service} index={index} />
           ))}
         </div>
 
         {/* Main CTA Section */}
-        <div className={`text-center transition-opacity duration-700 delay-700 ${
-          isVisible ? 'opacity-100' : 'opacity-0'
-        }`}>
+        <div className="text-center opacity-100">
           <div className="bg-slate-50 rounded-3xl p-8 text-slate-900 shadow-sm relative overflow-hidden">
             <div className="relative z-10">
               <div className="inline-flex items-center bg-white/90 border border-slate-200 rounded-full px-6 py-3 mb-6">
                 <Award className="h-5 w-5 mr-2 text-slate-800" />
-                <span className="font-poppins font-medium text-slate-800">We Stand Behind Our Work</span>
+                <span className="font-medium text-slate-800">We Stand Behind Our Work</span>
               </div>
-              <h3 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl mb-4 text-slate-900">
+              <h3 className="font-medium text-2xl sm:text-3xl lg:text-4xl mb-4 text-slate-900">
                 Need a Different Service?
               </h3>
-              <p className="font-poppins text-slate-800 mb-6 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+              <p className="text-slate-800 mb-6 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
                 We've got 44+ different leak detection services for any problem you might have. From home water issues to big commercial pipe fixes - we have the know-how and tools to solve any leak situation you're dealing with.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => window.location.href = 'tel:+18888759844'}
-                  className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-poppins font-medium transition-all duration-300 transform hover:scale-105 shadow-sm flex items-center justify-center gap-2"
+                  className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-medium transition-all duration-300 transform hover:scale-105 shadow-sm flex items-center justify-center gap-2"
                 >
                   <PhoneCall className="h-5 w-5" />
                   <span className="font-ibm-plex-mono font-medium">Call +1 (888) 875-9844</span>
@@ -425,7 +410,7 @@ export const ServiceHighlights = memo(() => {
                 </button>
                 <a 
                   href="/services"
-                  className="group bg-white border border-slate-200 text-slate-900 px-8 py-4 rounded-2xl font-poppins font-medium hover:bg-slate-50 transition-all duration-300 transform hover:scale-105 shadow-sm flex items-center justify-center gap-2"
+                  className="group bg-white border border-slate-200 text-slate-900 px-8 py-4 rounded-2xl font-medium hover:bg-slate-50 transition-all duration-300 transform hover:scale-105 shadow-sm flex items-center justify-center gap-2"
                 >
                   <Globe className="h-5 w-5" />
                   View All Services

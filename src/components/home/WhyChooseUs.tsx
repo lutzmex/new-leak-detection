@@ -39,21 +39,21 @@ const FeatureCard = memo(({ feature }: { feature: any }) => (
         loading="lazy"
       />
 
-      <div className="font-poppins font-medium text-2xl text-slate-900 mb-2">
+      <div className="font-medium text-2xl text-slate-900 mb-2">
         {feature.stats}
       </div>
 
-      <h3 className="font-poppins font-medium text-xl text-slate-900 mb-3 text-center">
+      <h3 className="font-medium text-xl text-slate-900 mb-3 text-center">
         {feature.title}
       </h3>
 
-      <p className="font-poppins text-slate-700 leading-relaxed mb-4 text-sm text-center">
+      <p className="text-slate-700 leading-relaxed mb-4 text-sm text-center">
         {feature.description}
       </p>
 
       <div className="space-y-2 w-full">
         {feature.features.map((feat: string, index: number) => (
-          <div key={index} className="flex items-center justify-start font-poppins text-sm text-slate-700">
+          <div key={index} className="flex items-center justify-start text-sm text-slate-700">
             <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
             <span className="text-left">{feat}</span>
           </div>
@@ -94,15 +94,15 @@ const ProcessStep = memo(({ step }: { step: any }) => (
         loading="lazy"
       />
 
-      <div className="bg-slate-100 text-slate-800 px-3 py-1 rounded-full font-poppins font-medium text-sm mb-3 inline-block">
+      <div className="bg-slate-100 text-slate-800 px-3 py-1 rounded-full font-medium text-sm mb-3 inline-block">
         Step {step.step}
       </div>
 
-      <h4 className="font-poppins font-medium text-lg text-slate-900 mb-3 text-center">
+      <h4 className="font-medium text-lg text-slate-900 mb-3 text-center">
         {step.title}
       </h4>
 
-      <p className="font-poppins text-slate-700 text-sm leading-relaxed text-center">
+      <p className="text-slate-700 text-sm leading-relaxed text-center">
         {step.description}
       </p>
     </div>
@@ -236,37 +236,37 @@ export const WhyChooseUs = memo(() => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 lg:mb-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-poppins font-medium text-sm mb-6 shadow-sm">
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-medium text-sm mb-6 shadow-sm">
             <Star className="h-5 w-5 mr-2" />
             Top Choice for Leak Detection
           </div>
-          <h2 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
+          <h2 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
             Why Choose Our
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Expert Team?
             </span>
           </h2>
-          <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
             Modern technology meets trusted expertise. We deliver fast leak detection with guaranteed results and 24/7 emergency support across America.
           </p>
 
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-blue-600 mb-1">99.9%</div>
-              <div className="font-poppins text-slate-800 text-base">Find Every Leak</div>
+              <div className="font-medium text-4xl text-blue-600 mb-1">99.9%</div>
+              <div className="text-slate-800 text-base">Find Every Leak</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-purple-600 mb-1">850+</div>
-              <div className="font-poppins text-slate-800 text-base">Trained Experts</div>
+              <div className="font-medium text-4xl text-purple-600 mb-1">850+</div>
+              <div className="text-slate-800 text-base">Trained Experts</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-green-600 mb-1">90min</div>
-              <div className="font-poppins text-slate-800 text-base">Response Time</div>
+              <div className="font-medium text-4xl text-green-600 mb-1">90min</div>
+              <div className="text-slate-800 text-base">Response Time</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-blue-200">
-              <div className="font-poppins font-medium text-4xl text-orange-600 mb-1">100%</div>
-              <div className="font-poppins text-slate-800 text-base">Guaranteed</div>
+              <div className="font-medium text-4xl text-orange-600 mb-1">100%</div>
+              <div className="text-slate-800 text-base">Guaranteed</div>
             </div>
           </div>
         </div>
@@ -274,8 +274,8 @@ export const WhyChooseUs = memo(() => {
         {/* Main Features Grid */}
         <div className="mb-12">
           <div className="text-center mb-10">
-            <h3 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">What Makes Us Different</h3>
-            <p className="font-poppins text-base sm:text-lg text-slate-700">Modern technology and professional expertise for superior leak detection</p>
+            <h3 className="font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">What Makes Us Different</h3>
+            <p className="text-base sm:text-lg text-slate-700">Modern technology and professional expertise for superior leak detection</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
@@ -288,8 +288,8 @@ export const WhyChooseUs = memo(() => {
         {/* Process Steps */}
         <div className="mb-6 sm:mb-8 lg:mb-16">
           <div className="text-center mb-12">
-            <h3 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">How We Help You</h3>
-            <p className="font-poppins text-base sm:text-lg text-slate-700 max-w-2xl mx-auto">
+            <h3 className="font-medium text-2xl sm:text-3xl lg:text-4xl text-slate-900 mb-4">How We Help You</h3>
+            <p className="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto">
               Simple process using modern technology with expert analysis for guaranteed results
             </p>
           </div>
@@ -306,7 +306,7 @@ export const WhyChooseUs = memo(() => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/services"
-              className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-poppins font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              className="group bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
             >
               <MapPin className="h-5 w-5" />
               See All Our Services
@@ -314,7 +314,7 @@ export const WhyChooseUs = memo(() => {
             </a>
             <a 
               href="tel:+18888759844"
-              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-poppins font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              className="group bg-white/95 backdrop-blur-sm border border-white/20 text-slate-900 hover:bg-white px-8 py-4 rounded-2xl font-medium text-base transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
               style={{
                 boxShadow: '0 8px 32px rgba(31, 38, 135, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9)',
               }}

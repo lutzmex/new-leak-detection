@@ -11,7 +11,7 @@ interface TocProps {
 
 export function Toc({ items }: TocProps) {
   const [activeId, setActiveId] = useState<string>('');
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Immediate visibility for LCP optimization
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const tocRef = useRef<HTMLDivElement>(null);
@@ -80,10 +80,7 @@ export function Toc({ items }: TocProps) {
     };
   }, [h2Items, isMobile]);
 
-  // Visibility animation
-  useEffect(() => {
-    setTimeout(() => setIsVisible(true), 200);
-  }, []);
+  // Removed visibility animation delay for LCP optimization
 
   if (!h2Items || h2Items.length === 0) {
     return null;
@@ -123,8 +120,7 @@ export function Toc({ items }: TocProps) {
     <aside 
       ref={tocRef}
       className={`
-        sticky transition-all duration-500
-        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
+        sticky transition-all duration-500 opacity-100 translate-y-0
         ${isMobile 
           ? 'top-4 mx-4 mb-6 bg-white border border-gray-200 rounded-lg shadow-lg z-30' 
           : 'top-24 bg-white border border-gray-200 rounded-lg shadow-sm'
@@ -140,7 +136,7 @@ export function Toc({ items }: TocProps) {
             <div className={`bg-blue-50 rounded-md ${isMobile ? 'p-1' : 'p-1.5'}`}>
               <BookOpen className={`text-blue-600 ${isMobile ? 'h-3.5 w-3.5' : 'h-4 w-4'}`} />
             </div>
-            <h3 className={`font-poppins font-medium text-gray-900 ${
+            <h3 className={`font-medium text-gray-900 ${
               isMobile ? 'text-sm' : 'text-base'
             }`}>
               Table of Contents
@@ -177,7 +173,7 @@ export function Toc({ items }: TocProps) {
                     href={`#${item.id}`}
                     onClick={(e) => handleItemClick(e, item.id)}
                     className={`
-                      group block rounded-md transition-all duration-200 font-poppins font-medium
+                      group block rounded-md transition-all duration-200 font-medium
                       ${isMobile 
                         ? 'py-2 px-2.5 text-sm min-h-[44px] flex items-center' 
                         : 'py-2.5 px-3 text-sm'
@@ -205,7 +201,7 @@ export function Toc({ items }: TocProps) {
           <div className={`border-t border-gray-100 ${
             isMobile ? 'mt-3 pt-2' : 'mt-4 pt-3'
           }`}>
-            <div className={`font-poppins text-gray-500 text-center ${
+            <div className={`text-gray-500 text-center ${
               isMobile ? 'text-xs' : 'text-xs'
             }`}>
               <span className="font-medium">{h2Items.length}</span> sections

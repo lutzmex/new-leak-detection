@@ -81,7 +81,7 @@ const BlogPostCard = memo(({ post, index }: { post: BlogPost; index: number }) =
               <div className={`w-16 h-16 mx-auto mb-4 bg-white/80 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-sm border-2 border-${accentColor}-200`}>
                 <BookOpen className={`h-8 w-8 text-${accentColor}-600`} />
               </div>
-              <div className="font-poppins font-medium text-sm">{post.category || 'Article'}</div>
+              <div className="font-medium text-sm">{post.category || 'Article'}</div>
             </div>
           </div>
 
@@ -93,13 +93,13 @@ const BlogPostCard = memo(({ post, index }: { post: BlogPost; index: number }) =
         <div className="p-6">
           {/* Category and Tags */}
           <div className="flex items-center gap-2 mb-4">
-            <span className={`bg-${accentColor}-50 text-${accentColor}-600 px-3 py-1 rounded-full font-poppins font-medium text-xs border border-${accentColor}-200`}>
+            <span className={`bg-${accentColor}-50 text-${accentColor}-600 px-3 py-1 rounded-full font-medium text-xs border border-${accentColor}-200`}>
               {post.category || 'Guide'}
             </span>
             {post.tags && post.tags.length > 0 && (
               <div className="flex items-center gap-1">
                 <Tag className="h-3 w-3 text-slate-600" />
-                <span className="font-poppins text-xs text-slate-700 truncate max-w-[100px]">
+                <span className="text-xs text-slate-700 truncate max-w-[100px]">
                   {post.tags[0]}
                 </span>
               </div>
@@ -107,13 +107,13 @@ const BlogPostCard = memo(({ post, index }: { post: BlogPost; index: number }) =
           </div>
 
           {/* Title */}
-          <h3 className="font-poppins font-medium text-lg text-slate-800 mb-3 line-clamp-2 leading-tight group-hover:text-slate-700 transition-colors">
+          <h3 className="font-medium text-lg text-slate-800 mb-3 line-clamp-2 leading-tight group-hover:text-slate-700 transition-colors">
             {post.title}
           </h3>
 
           {/* Excerpt */}
           {post.excerpt && (
-            <p className="font-poppins text-sm text-slate-700 mb-4 line-clamp-2 leading-relaxed">
+            <p className="text-sm text-slate-700 mb-4 line-clamp-2 leading-relaxed">
               {post.excerpt}
             </p>
           )}
@@ -123,14 +123,14 @@ const BlogPostCard = memo(({ post, index }: { post: BlogPost; index: number }) =
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1">
                 <User className="h-3 w-3" />
-                <span className="font-poppins font-medium text-xs">{post.author || 'Expert'}</span>
+                <span className="font-medium text-xs">{post.author || 'Expert'}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="h-3 w-3" />
-                <span className="font-poppins text-xs">{post.readTime}</span>
+                <span className="text-xs">{post.readTime}</span>
               </div>
             </div>
-            <div className="font-poppins text-xs">
+            <div className="text-xs">
               {formatDate(post.date)}
             </div>
           </div>
@@ -179,16 +179,16 @@ export const HomeBlogSection = memo(() => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 lg:mb-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-poppins font-medium text-sm mb-6 shadow-sm">
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 px-6 py-3 rounded-full font-medium text-sm mb-6 shadow-sm">
             <BookOpen className="h-5 w-5 mr-2" />
             Expert Insights & Guides
           </div>
-          <h2 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
+          <h2 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Latest Expert Articles
             </span>
           </h2>
-          <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-800 mb-8 max-w-3xl mx-auto leading-relaxed">
             Stay informed with the latest insights, techniques, and professional tips from our leak detection experts.
           </p>
         </div>
@@ -250,7 +250,7 @@ export const HomeBlogSection = memo(() => {
         <div className="text-center mt-6 sm:mt-8 lg:mt-16">
           <Link 
             href="/blog" 
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-poppins font-medium transition-all duration-300 transform hover:scale-105 shadow-sm"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-800 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-medium transition-all duration-300 transform hover:scale-105 shadow-sm"
           >
             <BookOpen className="h-5 w-5" />
             Explore All {leakDetectionPosts.length} Articles

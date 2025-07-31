@@ -42,7 +42,7 @@ const accentColors = [
   "indigo"
 ];
 
-// Optimized RelatedPostCard with Updated Typography
+// Optimized RelatedPostCard with Simplified Typography
 function RelatedPostCard({ post, index }: { post: BlogPost; index: number }) {
   const readingTime = post.readingTime || Math.ceil((post.content?.length || 1000) / 1000);
   const gradient = gradients[index % gradients.length];
@@ -90,7 +90,7 @@ function RelatedPostCard({ post, index }: { post: BlogPost; index: number }) {
               <div className={`w-16 h-16 mx-auto mb-4 bg-white/80 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-sm border-2 border-${accentColor}-200`}>
                 <BookOpen className={`h-8 w-8 text-${accentColor}-600`} />
               </div>
-              <div className="font-poppins text-sm font-medium text-gray-700">{post.category || 'Article'}</div>
+              <div className="text-sm font-medium text-gray-700">{post.category || 'Article'}</div>
             </div>
           </div>
 
@@ -102,13 +102,13 @@ function RelatedPostCard({ post, index }: { post: BlogPost; index: number }) {
         <div className="p-6">
           {/* Category and Tags */}
           <div className="flex items-center gap-2 mb-4">
-            <span className={`font-poppins bg-${accentColor}-50 text-${accentColor}-700 px-3 py-1 rounded-full text-xs font-medium border border-${accentColor}-200`}>
+            <span className={`bg-${accentColor}-50 text-${accentColor}-700 px-3 py-1 rounded-full text-xs font-medium border border-${accentColor}-200`}>
               {post.category || 'Guide'}
             </span>
             {post.tags && post.tags.length > 0 && (
               <div className="flex items-center gap-1">
                 <Tag className="h-3 w-3 text-slate-500" />
-                <span className="font-poppins text-xs text-slate-600 truncate max-w-[100px]">
+                <span className="text-xs text-slate-600 truncate max-w-[100px]">
                   {post.tags[0]}
                 </span>
               </div>
@@ -116,19 +116,19 @@ function RelatedPostCard({ post, index }: { post: BlogPost; index: number }) {
           </div>
 
           {/* Title */}
-          <h3 className="font-poppins text-lg font-medium text-slate-900 mb-3 line-clamp-2 leading-tight group-hover:text-slate-800 transition-colors">
+          <h3 className="text-lg font-medium text-slate-900 mb-3 line-clamp-2 leading-tight group-hover:text-slate-800 transition-colors">
             {post.title}
           </h3>
 
           {/* Excerpt */}
           {post.excerpt && (
-            <p className="font-poppins text-sm text-slate-700 mb-4 line-clamp-2 leading-relaxed">
+            <p className="text-sm text-slate-700 mb-4 line-clamp-2 leading-relaxed">
               {post.excerpt}
             </p>
           )}
 
           {/* Footer */}
-          <div className="flex items-center justify-between font-poppins text-sm text-slate-600 pt-4 border-t border-slate-100">
+          <div className="flex items-center justify-between text-sm text-slate-600 pt-4 border-t border-slate-100">
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1">
                 <User className="h-3 w-3" />
@@ -239,16 +239,16 @@ export function RelatedPosts({ currentPostSlug, allPosts }: RelatedPostsProps) {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 lg:mb-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-900 px-6 py-3 rounded-full font-poppins text-sm font-medium mb-6 shadow-sm">
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-900 px-6 py-3 rounded-full text-sm font-medium mb-6 shadow-sm">
             <BookOpen className="h-5 w-5 mr-2" />
             Related Articles
           </div>
-          <h2 className="font-poppins font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
+          <h2 className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-slate-900 mb-6 leading-tight">
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Continue Reading
             </span>
           </h2>
-          <p className="font-poppins text-base sm:text-lg lg:text-xl text-slate-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover more expert insights and practical guides tailored to your interests.
           </p>
 
@@ -260,7 +260,7 @@ export function RelatedPosts({ currentPostSlug, allPosts }: RelatedPostsProps) {
                   setSelectedCategory(null);
                   setCurrentSlide(0);
                 }}
-                className={`font-poppins px-4 py-2 rounded-full text-sm font-medium transition-all min-h-[44px] min-w-[44px] ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all min-h-[44px] min-w-[44px] ${
                   selectedCategory === null
                     ? 'bg-blue-600 text-white shadow-sm'
                     : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
@@ -281,7 +281,7 @@ export function RelatedPosts({ currentPostSlug, allPosts }: RelatedPostsProps) {
                       setSelectedCategory(categorySlug || null);
                       setCurrentSlide(0);
                     }}
-                    className={`font-poppins px-4 py-2 rounded-full text-sm font-medium transition-all min-h-[44px] min-w-[44px] ${
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all min-h-[44px] min-w-[44px] ${
                       selectedCategory === categorySlug
                         ? 'bg-blue-600 text-white shadow-sm'
                         : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
@@ -368,7 +368,7 @@ export function RelatedPosts({ currentPostSlug, allPosts }: RelatedPostsProps) {
         <div className="text-center mt-6 sm:mt-8 lg:mt-16">
           <Link 
             href="/blog" 
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-900 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-poppins font-medium transition-all duration-300 transform hover:scale-105 shadow-sm min-h-[48px]"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 text-blue-900 hover:from-blue-200 hover:to-purple-200 px-8 py-4 rounded-2xl font-medium transition-all duration-300 transform hover:scale-105 shadow-sm min-h-[48px]"
           >
             <BookOpen className="h-5 w-5" />
             Explore All Articles
