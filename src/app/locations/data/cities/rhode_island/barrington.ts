@@ -267,7 +267,7 @@ export const barrington_ri_DynamicData: CityDynamicData = {
     { name: 'Woonsocket', slug: 'woonsocket' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-71.3503!3d41.7937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJTQnW3A8D5IkRax6C9aZArPw!2sBarrington%2C%20RI!5e0!3m2!1sen!2sus!4v1719777400000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-71.3092!3d41.7407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4585148f932e5:0xde5161c28b584a2b!2sBarrington%2C%20RI!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

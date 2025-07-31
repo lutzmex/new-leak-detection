@@ -321,7 +321,7 @@ export const watervliet_ny_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-73.700600!3d42.734000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJy7B-x45BtYkRCMCfOA5I9yI!2sWatervliet%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-73.7032!3d42.7306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de091a134d1685:0x8539e6a0a7343e06!2sWatervliet%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

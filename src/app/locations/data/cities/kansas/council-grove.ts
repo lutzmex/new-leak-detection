@@ -287,7 +287,7 @@ export const councilgrove_ks_DynamicData: CityDynamicData = {
     { name: 'Wichita', slug: 'wichita' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-96.4848!3d38.6617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87be68a1fa0fd5d7%3A0x7e2ec1a72fd9bac4!2sCouncil%20Grove%2C%20KS!5e0!3m2!1sen!2sus!4v1753824000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d-96.4883!3d38.6653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf0d115e5a95f3:0xc18b77626359f518!2sCouncil%20Grove%2C%20KS!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

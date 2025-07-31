@@ -313,7 +313,7 @@ export const holyoke_ma_DynamicData: CityDynamicData = {
     { name: 'Worcester', slug: 'worcester' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-72.6162!3d42.204258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJf2F1A1y34IkRkKQ2xZ1PmxU!2sHolyoke%2C%20MA!5e0!3m2!1sen!2sus!4v1719300000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-72.6162!3d42.2043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e3c544d6507f:0xe0e9a7852c79f94e!2sHolyoke%2C%20MA!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

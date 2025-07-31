@@ -344,7 +344,7 @@ export const woodland_ca_DynamicData: CityDynamicData = {
     { name: 'Yuba City', slug: 'yuba-city' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-121.7733!3d38.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x809a1d7a4f3e2871%3A0x2279fc20c037a320!2sWoodland%2C%20CA!5e0!3m2!1sen!2sus!4v1740691200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-121.7733!3d38.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085288591a2729d:0x39a0397ac7343e06!2sWoodland%2C%20CA!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

@@ -278,7 +278,7 @@ export const jonesborough_tn_DynamicData: CityDynamicData = {
     { name: 'Tullahoma', slug: 'tullahoma' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-82.5618!3d36.3487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x885bb68f26b4a129%3A0xc0aef8a682f06d2b!2sJonesborough%2C%20TN!5e0!3m2!1sen!2sus!4v1751500800000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d-82.4746!3d36.2943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885a7cf95e791e2b:0x5e022f46a3606f71!2sJonesborough%2C%20TN!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

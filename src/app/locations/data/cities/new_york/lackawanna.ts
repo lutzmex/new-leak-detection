@@ -383,7 +383,7 @@ export const lackawanna_ny_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-78.8404!3d42.8334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x89d318d9be0c9c51:0x38df0bd7f614b67f!2sLackawanna%2C%20NY!5e0!3m2!1sen!2sus!4v1720243200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-78.8242!3d42.8220!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3111005a5a1a1:0x5e533036e86445f1!2sLackawanna%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

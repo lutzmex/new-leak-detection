@@ -302,7 +302,7 @@ export const shawnee_ok_DynamicData: CityDynamicData = {
   ],
 
   // Map
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-96.9279!3d35.3276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJZWFxw4gRYYERJvGXq31qzSg!2sShawnee%2C%20OK!5e0!3m2!1sen!2sus!4v1740739200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-96.9248!3d35.3340!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b403f533a1e127:0x5e2a27d14c33852!2sShawnee%2C%20OK!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

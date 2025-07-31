@@ -369,7 +369,7 @@ export const lake_placid_ny_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1234567890123!2d-73.9799!3d44.2793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x4cbf49b2bc05e8b1:0x9f1a1b2c3d4e5f6!2sLake%20Placid%2C%20NY!5e0!3m2!1sen!2sus!4v1688123456789",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-73.9855!3d44.2795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccae20876118d09:0x85392de66c600138!2sLake%20Placid%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

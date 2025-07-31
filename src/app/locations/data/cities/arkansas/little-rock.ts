@@ -293,7 +293,7 @@ export const little_rock_ar_DynamicData: CityDynamicData = {
     { name: 'West Memphis', slug: 'west-memphis' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-92.2896!3d34.7465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x87d226f75344807f%3A0x1c0f298b03dab8ff!2sLittle%20Rock%2C%20AR!5e0!3m2!1sen!2sus!4v1719636600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d-92.2896!3d34.7465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2a35368a49669:0x33a6233519546879!2sLittle%20Rock%2C%20AR!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

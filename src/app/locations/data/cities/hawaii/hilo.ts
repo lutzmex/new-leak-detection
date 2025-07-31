@@ -291,7 +291,7 @@ export const hilo_hi_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-155.0900!3d19.7296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x79551a6e8ca14113%3A0x3b3285faeacda6e!2sHilo%2C%20HI!5e0!3m2!1sen!2sus!4v1751251200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-155.0911!3d19.7297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7953da54e2621415:0x54af3a7aff4dd812!2sHilo%2C%20HI!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

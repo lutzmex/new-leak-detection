@@ -377,7 +377,7 @@ export const flushing_ny_DynamicData: CityDynamicData = {
     { name: 'Yonkers', slug: 'yonkers' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-73.8331!3d40.7675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x89c259af09df6f01%3A0xf7c2ff8c27eda60b!2sFlushing%2C%20NY!5e0!3m2!1sen!2sus!4v1710000000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-73.8331!3d40.7679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600e5da4182b:0x39d42cf3896593f!2sFlushing%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

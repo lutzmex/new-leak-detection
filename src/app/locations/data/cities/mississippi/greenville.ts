@@ -302,7 +302,7 @@ export const greenville_ms_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-91.0513!3d33.4084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1698712345678',
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-91.0601!3d33.4087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862c2f7b8a7c6407:0x5e0f0b4d4b1a415a!2sGreenville%2C%20MS!5e0!3m2!1sen!2sus!4v1715882400000',
 
   localFactors: {
     commonIssues: [

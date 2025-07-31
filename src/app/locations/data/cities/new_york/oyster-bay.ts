@@ -383,7 +383,7 @@ export const oyster_bay_ny_DynamicData: CityDynamicData = {
   ],
 
   // Map
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-73.536959!3d40.885943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJO6xYOtk_wokROPF2bWEzXhY!2sOyster%20Bay%2C%20NY!5e0!3m2!1sen!2sus!4v1751443200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-73.5326!3d40.8732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28383f982565d:0xc89899321f8a84b3!2sOyster%20Bay%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

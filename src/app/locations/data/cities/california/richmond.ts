@@ -398,7 +398,7 @@ export const richmond_ca_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-122.3477486!3d37.9357576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJP7-j1vZa2YAR_QvuY3fDhrA!2sRichmond%2C%20CA!5e0!3m2!1sen!2sus!4v1750800000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18000!2d-122.3477!3d37.9358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a16a445a555:0x516315eb135d5568!2sRichmond%2C%20CA!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

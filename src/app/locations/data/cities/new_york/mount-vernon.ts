@@ -369,7 +369,7 @@ export const mount_vernon_ny_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-73.8371!3d40.9126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x89c2f4bb0ba4bceb%3A0x04082db8587a0a6!2sMount%20Vernon%2C%20NY!5e0!3m2!1sen!2sus!4v1740825600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-73.8360!3d40.9137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28d1118356c39:0x79469e32a61362e!2sMount%20Vernon%2C%20NY!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

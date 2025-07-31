@@ -234,7 +234,7 @@ export const fortscott_ks_DynamicData: CityDynamicData = {
     { name: 'Topeka', slug: 'topeka' },
     { name: 'Wichita', slug: 'wichita' }
   ],
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-94.7086!3d37.8392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c8fe1bd66f89d3%3A0x0fdbb047d28cd9!2sFort%20Scott%2C%20KS!5e0!3m2!1sen!2sus!4v1700000000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-94.7047!3d37.8398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c041846b0e95cb:0x5e8c9735a265b706!2sFort%20Scott%2C%20KS!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

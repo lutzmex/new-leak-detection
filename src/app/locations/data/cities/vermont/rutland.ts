@@ -276,7 +276,7 @@ export const rutland_vt_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-72.974306!3d43.610649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x89e1aaeaa8f71f47%3A0x87be08a1d25debee!2sRutland%2C%20VT!5e0!3m2!1sen!2sus!4v1751241600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-72.9778!3d43.6106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb49767253550e5:0xc84c98a3b8392176!2sRutland%2C%20VT!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

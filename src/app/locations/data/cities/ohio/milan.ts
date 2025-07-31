@@ -317,7 +317,7 @@ export const milan_oh_DynamicData: CityDynamicData = {
     { name: 'Youngstown', slug: 'youngstown' },
     { name: 'Zanesville', slug: 'zanesville' }
   ],
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-82.721926!3d41.305886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x883cf447823c8623%3A0x930a0a5a3cf8898e!2sMilan%2C%20OH!5e0!3m2!1sen!2sus!4v1719800000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d-82.6074!3d41.3001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883a54d5d9c878b3:0xb2f4166eb85f269c!2sMilan%2C%20OH!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

@@ -307,7 +307,7 @@ export const smithcenter_ks_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154.464675165993!2d-98.7856!3d39.8959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sChIJd1O0LnNNpIcRtq9RVh5LeNY!2sSmith%20Center%2C%20KS!5e0!3m2!1sen!2sus!4v1698576023000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d-98.7859!3d39.7781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87a2a0d0a0b2d71b:0x5d9e50e932c91834!2sSmith%20Center%2C%20KS!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

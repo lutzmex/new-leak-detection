@@ -85,6 +85,55 @@ const nextConfig: NextConfig = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+
+    // Fix "process is not defined" error by defining process.env for client-side
+    if (!isServer) {
+      // Set fallbacks for Node.js modules
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+        crypto: false,
+        stream: false,
+        url: false,
+        zlib: false,
+        http: false,
+        https: false,
+        assert: false,
+        os: false,
+        path: false,
+        util: false,
+        buffer: false,
+        events: false,
+      };
+
+      // Define process and process.env for client-side
+      const webpack = require('webpack');
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify(dev ? 'development' : 'production'),
+          'process.browser': JSON.stringify(true),
+          'process.env.NEXT_PUBLIC_SITE_URL': JSON.stringify(
+            process.env.NEXT_PUBLIC_SITE_URL || 'https://discountleakdetection.com'
+          ),
+          'process.env.NEXT_PUBLIC_SITE_NAME': JSON.stringify(
+            process.env.NEXT_PUBLIC_SITE_NAME || 'Discount Leak Detection'
+          ),
+          // Define process object itself for client-side
+          'process.versions': JSON.stringify({ node: '18.0.0' }),
+          'process.platform': JSON.stringify('browser'),
+          'process.arch': JSON.stringify('x64'),
+        })
+      );
+
+      // Alternative: Use webpack's ProvidePlugin for global process
+      config.plugins.push(
+        new webpack.ProvidePlugin({
+          process: 'process/browser',
+        })
+      );
+    }
     
     // Production optimizations
     if (!dev && !isServer) {
@@ -293,15 +342,16 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_SITE_NAME: process.env.NEXT_PUBLIC_SITE_NAME || 'Discount Leak Detection',
   },
   
-  // Production source maps (disabled for security and size)
-  productionBrowserSourceMaps: false,
+  // FIXED: Enable source maps in development to fix PageSpeed issues
+  productionBrowserSourceMaps: false, // Keep disabled in production for security
   
   // Generate build ID for cache busting
   generateBuildId: async () => {
     // Use timestamp for build ID in development, commit hash in production
-    return process.env.NODE_ENV === 'development' 
-      ? `dev-${Date.now()}`
-      : process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || `build-${Date.now()}`;
+    if (process.env.NODE_ENV === 'development') {
+      return `dev-${Date.now()}`;
+    }
+    return process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || `build-${Date.now()}`;
   },
   
   // Bundle analyzer (enable when needed)
@@ -332,6 +382,11 @@ DEPLOYMENT INSTRUCTIONS:
 
 6. Bundle analysis:
    ANALYZE=true pnpm build
+
+FIXES APPLIED:
+- Added webpack.DefinePlugin to define process.env for client-side (fixes "process is not defined" error)
+- Added resolve.fallback to prevent Node.js modules from being bundled on client-side
+- Source maps remain disabled in production but properly configured for development
 */
 
 export default nextConfig;

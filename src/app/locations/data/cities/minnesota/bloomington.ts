@@ -308,7 +308,7 @@ export const bloomington_mn_DynamicData: CityDynamicData = {
     { name: 'Winona', slug: 'winona' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28939.91428909934!2d-93.2983!3d44.8408!3m2!1i1024!2i768!4f13.1",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d-93.3308!3d44.8408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3310ca7d4b491:0x266a2e4d04111357!2sBloomington%2C%20MN!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

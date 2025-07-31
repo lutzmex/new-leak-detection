@@ -225,7 +225,7 @@ export const honolulu_hi_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-157.8583!3d21.3069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x7c006d4f89fa1a4f%3A0xdda4d7eebdcf6cd0!2sHonolulu%2C%20HI!5e0!3m2!1sen!2sus!4v1698681600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25000!2d-157.8583!3d21.3069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00665039708915:0x65c2b6629954d48a!2sHonolulu%2C%20HI!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

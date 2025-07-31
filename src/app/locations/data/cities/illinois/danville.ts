@@ -351,7 +351,7 @@ export const danville_il_DynamicData: CityDynamicData = {
   ],
 
   // Map
-  mapEmbedUrl: "https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Danville%2C%20IL&center=40.1245%2C-87.6307&zoom=12",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-87.6298!3d40.1245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880d603a16bf946b:0xb6a26778f6735a7!2sDanville%2C%20IL!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

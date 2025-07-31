@@ -355,7 +355,7 @@ export const jacksonville_il_DynamicData: CityDynamicData = {
   ],
 
   // Map Embed URL
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-90.2296!3d39.7334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x8878a4095b26331f%3A0x52a771d7e3dfc0b1!2sJacksonville%2C%20IL!5e0!3m2!1sen!2sus!4v1719753600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-90.2290!3d39.7337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87de7e3b6a22b799:0x80df7a28892d770c!2sJacksonville%2C%20IL!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

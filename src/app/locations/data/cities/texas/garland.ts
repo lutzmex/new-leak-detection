@@ -345,7 +345,7 @@ export const garland_tx_DynamicData: CityDynamicData = {
     { name: 'Ysleta', slug: 'ysleta' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-96.638883!3d32.912582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJm6ut1vE8j4YR7Uy0jye6VtU!2sGarland%2C%20TX!5e0!3m2!1sen!2sus!4v1740864000000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d-96.6411!3d32.9126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1f6d1406aa89:0x873135c34e8979d6!2sGarland%2C%20TX!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

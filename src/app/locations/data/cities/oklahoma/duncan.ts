@@ -256,7 +256,7 @@ export const duncan_ok_DynamicData: CityDynamicData = {
     { name: 'Woodward', slug: 'woodward' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-97.9551!3d34.5026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x87b6fc0c8fa7ec55%3A0xdbf0d770bbe9109f!2sDuncan%2C%20OK!5e0!3m2!1sen!2sus!4v1751241600000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-97.9559!3d34.5023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2829367c29c67:0x5e0f0b4d4b1a415a!2sDuncan%2C%20OK!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [

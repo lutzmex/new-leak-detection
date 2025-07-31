@@ -308,7 +308,7 @@ export const hallandale_beach_fl_DynamicData: CityDynamicData = {
     { name: 'Winter Park', slug: 'winter-park' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-80.148378!3d25.981228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1sChIJ8XJsN3vB2YgRvQzHq31DXQA!2sHallandale%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1751414400000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-80.1420!3d25.9818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ab75b22b404d:0x37855b3d22b283d0!2sHallandale%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1715882400000",
 
   // Local Factors and SEO Data
   localFactors: {

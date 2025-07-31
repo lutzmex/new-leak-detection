@@ -273,7 +273,7 @@ export const chadron_ne_DynamicData: CityDynamicData = {
     { name: 'Sidney', slug: 'sidney' }
   ],
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154!2d-103.0025!3d42.8295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1s0x873e269c3fbc984f:0x4c7d70ade0af!2sChadron%2C%20NE!5e0!3m2!1sen!2sus!4v1751459200000",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d-103.0018!3d42.8286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877bc954a23b3699:0xdc17424578b86d49!2sChadron%2C%20NE!5e0!3m2!1sen!2sus!4v1715882400000",
 
   localFactors: {
     commonIssues: [
