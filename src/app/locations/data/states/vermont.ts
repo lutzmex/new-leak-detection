@@ -336,14 +336,14 @@ export const vermontDynamicData: StateDynamicData = {
       "camera inspection leak Vermont",
       "burst pipe detection VT"
     ],
-    canonicalUrl: "https://discountleakdetection.com/vermont",
+    canonicalUrl: "https://discountleakdetection.com/locations/vermont",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Vermont | Discount Leak Detection",
       description: "Discount Leak Detection offers expert water, gas, slab, and pool leak detection services across Vermont. Fast, same-day inspections from Burlington to Brattleboro. Call now.",
       image: "https://discountleakdetection.com/images/leak-detection-in-vermont.webp",
       imageAlt: "Expert plumbers repairing a gushing kitchen sink pipe leak. Water sprays from under the cabinet during a fast leak fix.",
-      url: "https://discountleakdetection.com/vermont",
+      url: "https://discountleakdetection.com/locations/vermont",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -369,7 +369,7 @@ export const vermontDynamicData: StateDynamicData = {
         "logo": "https://discountleakdetection.com/logo/logo.webp",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        "url": "https://discountleakdetection.com/vermont",
+        "url": "https://discountleakdetection.com/locations/vermont",
         "telephone": "+1 (888) 875-9844",
         "priceRange": "$$",
         "address": {
@@ -765,7 +765,7 @@ export const vermontDynamicData: StateDynamicData = {
             "@type": "ListItem",
             "position": 3,
             "name": "Vermont",
-            "item": "https://discountleakdetection.com/vermont"
+            "item": "https://discountleakdetection.com/locations/vermont"
           }
         ]
       }

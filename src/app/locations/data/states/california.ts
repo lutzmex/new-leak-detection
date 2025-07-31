@@ -468,14 +468,14 @@ export const californiaDynamicData: StateDynamicData = {
     "24/7 leak detection CA",
     "CA leak repair"
   ],
-  canonicalUrl: "https://discountleakdetection.com/california",
+  canonicalUrl: "https://discountleakdetection.com/locations/california",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in California | Discount Leak",
     description: "Discount Leak Detection offers 24/7 leak detection services across California for water, gas, pool, and slab leaks. Call 888-875-9844 today.",
     image: "https://discountleakdetection.com/images/leak-detection-in-california.webp",
     imageAlt: "Expert plumbers responding to a large burst pipe leak in a building, using pumps for water removal and immediate repair.",
-    url: "https://discountleakdetection.com/california",
+    url: "https://discountleakdetection.com/locations/california",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -502,7 +502,7 @@ export const californiaDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/california",
+      "url": "https://discountleakdetection.com/locations/california",
       "telephone": "+18888759844",
       "priceRange": "$$",
       "address": {
@@ -893,7 +893,7 @@ export const californiaDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "California",
-          "item": "https://discountleakdetection.com/california"
+          "item": "https://discountleakdetection.com/locations/california"
         }
       ]
     }

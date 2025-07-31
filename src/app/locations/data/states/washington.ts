@@ -280,14 +280,14 @@ export const washingtonDynamicData: StateDynamicData = {
     "discount leak detection WA",
     "affordable leak detection Washington"
   ],
-  canonicalUrl: "https://discountleakdetection.com/washington",
+  canonicalUrl: "https://discountleakdetection.com/locations/washington",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Washington | Discount Leak",
     description: "Fast, accurate leak detection services across Washington. Our licensed team finds water, gas & pool leaks in homes and businesses 24/7. Call now!",
     image: "https://discountleakdetection.com/images/leak-detection-services-washington.webp",
     imageAlt: "Skilled plumbers use pressure testing for kitchen pipe leak detection, finding and repairing water leaks.",
-    url: "https://discountleakdetection.com/washington",
+    url: "https://discountleakdetection.com/locations/washington",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -313,7 +313,7 @@ export const washingtonDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/washington",
+      "url": "https://discountleakdetection.com/locations/washington",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -410,7 +410,7 @@ export const washingtonDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Washington",
-          "item": "https://discountleakdetection.com/washington"
+          "item": "https://discountleakdetection.com/locations/washington"
         }
       ]
     }

@@ -351,14 +351,14 @@ export const iowaDynamicData: StateDynamicData = {
     "statewide leak detection Iowa",
     "IA leak detection services"
   ],
-  canonicalUrl: "https://discountleakdetection.com/iowa",
+  canonicalUrl: "https://discountleakdetection.com/locations/iowa",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Iowa | Discount Leak Detection",
     description: "Need reliable leak detection services in Iowa? Discount Leak Detection finds water, gas & pool leaks statewide with same-day emergency response. Call us!",
     image: "https://discountleakdetection.com/images/leak-detection-in-iowa.webp",
     imageAlt: "Skilled plumbers checking for underground pipe leaks on concrete using acoustic detection tools. Find slab leaks.",
-    url: "https://discountleakdetection.com/iowa",
+    url: "https://discountleakdetection.com/locations/iowa",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -384,7 +384,7 @@ export const iowaDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/iowa",
+      "url": "https://discountleakdetection.com/locations/iowa",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -775,7 +775,7 @@ export const iowaDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Iowa",
-          "item": "https://discountleakdetection.com/iowa"
+          "item": "https://discountleakdetection.com/locations/iowa"
         }
       ]
     }

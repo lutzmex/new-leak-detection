@@ -131,7 +131,7 @@ export const SERVICE_STATIC_CONFIG: ServiceStaticConfig = {
 
   // Trust Platforms Section
   trustPlatforms: {
-    title: 'Trusted on these platforms',
+    title: 'Trusted by customers on these platforms',
     platforms: [
       { src: '/icon/google.svg', alt: 'Google' },
       { src: '/icon/yelp.svg', alt: 'Yelp' },

@@ -376,14 +376,14 @@ export const floridaDynamicData: StateDynamicData = {
     "roof leak detection Florida",
     "thermal imaging leak detection Florida"
   ],
-  canonicalUrl: "https://discountleakdetection.com/florida",
+  canonicalUrl: "https://discountleakdetection.com/locations/florida",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Florida | Fast, Reliable 24/7",
     description: "Expert leak detection in Florida – fast, non-invasive water, gas, pool & slab leak finding statewide. Licensed techs, same-day service. Call 888-875-9844.",
     image: "https://discountleakdetection.com/images/leak-detection-in-florida.webp",
     imageAlt: "Expert plumbers detecting and repairing kitchen pipe leaks. Water gushes from range hood and sink pipes.",
-    url: "https://discountleakdetection.com/florida",
+    url: "https://discountleakdetection.com/locations/florida",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -409,7 +409,7 @@ export const floridaDynamicData: StateDynamicData = {
       logo: "https://discountleakdetection.com/logo/logo.webp",
       currenciesAccepted: "USD",
       paymentAccepted: "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      url: "https://discountleakdetection.com/florida",
+      url: "https://discountleakdetection.com/locations/florida",
       telephone: "+1 (888) 875-9844",
       priceRange: "$$",
       address: {
@@ -800,7 +800,7 @@ export const floridaDynamicData: StateDynamicData = {
           "@type": "ListItem",
           position: 3,
           name: "Florida",
-          item: "https://discountleakdetection.com/florida"
+          item: "https://discountleakdetection.com/locations/florida"
         }
       ]
     }

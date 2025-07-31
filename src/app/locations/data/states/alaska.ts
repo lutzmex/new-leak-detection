@@ -339,14 +339,14 @@ export const alaskaDynamicData: StateDynamicData = {
       "24/7 leak detection Alaska",
       "statewide leak detection Alaska"
     ],
-    canonicalUrl: "https://discountleakdetection.com/alaska",
+    canonicalUrl: "https://discountleakdetection.com/locations/alaska",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Alaska | Discount Leak Detection",
       description: "Get fast, same-day leak detection services across Alaska. Our expert team finds water, gas, & pool leaks statewide. Call +1 (888) 875-9844 now!",
       image: "https://discountleakdetection.com/images/leak-detection-in-alaska.webp",
       imageAlt: "Expert plumbers respond to a major ceiling water leak, doing leak detection and pipe repair.",
-      url: "https://discountleakdetection.com/alaska",
+      url: "https://discountleakdetection.com/locations/alaska",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -372,7 +372,7 @@ export const alaskaDynamicData: StateDynamicData = {
         "logo": "https://discountleakdetection.com/logo/logo.webp",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        "url": "https://discountleakdetection.com/alaska",
+        "url": "https://discountleakdetection.com/locations/alaska",
         "telephone": "+1 (888) 875-9844",
         "priceRange": "$$",
         "address": {
@@ -763,7 +763,7 @@ export const alaskaDynamicData: StateDynamicData = {
             "@type": "ListItem",
             "position": 3,
             "name": "Alaska",
-            "item": "https://discountleakdetection.com/alaska"
+            "item": "https://discountleakdetection.com/locations/alaska"
           }
         ]
       }

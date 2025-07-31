@@ -361,14 +361,14 @@ export const kentuckyDynamicData: StateDynamicData = {
     "24/7 leak detection Kentucky",
     "discount leak detection Kentucky"
   ],
-  canonicalUrl: "https://discountleakdetection.com/kentucky",
+  canonicalUrl: "https://discountleakdetection.com/locations/kentucky",
   robots: "index, follow",
   openGraph: {
     title: "Kentucky Leak Detection Services | Discount Leak Detection",
     description: "Fast, reliable leak detection services across Kentucky. 24/7 water, gas & pool specialists. Same-day service statewide. Call Discount Leak Detection now.",
     image: "https://discountleakdetection.com/images/leak-detection-in-kentucky.webp",
     imageAlt: "Skilled plumbers finding and fixing pipe leaks in a large apartment building.",
-    url: "https://discountleakdetection.com/kentucky",
+    url: "https://discountleakdetection.com/locations/kentucky",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -394,7 +394,7 @@ export const kentuckyDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/kentucky",
+      "url": "https://discountleakdetection.com/locations/kentucky",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -785,7 +785,7 @@ export const kentuckyDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Kentucky",
-          "item": "https://discountleakdetection.com/kentucky"
+          "item": "https://discountleakdetection.com/locations/kentucky"
         }
       ]
     }

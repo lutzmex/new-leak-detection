@@ -292,14 +292,14 @@ export const wyomingDynamicData: StateDynamicData = {
     "acoustic leak detection Wyoming",
     "24 hour leak detection Wyoming"
   ],
-  canonicalUrl: "https://discountleakdetection.com/wyoming",
+  canonicalUrl: "https://discountleakdetection.com/locations/wyoming",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Wyoming | Discount Leak Detection",
     description: "Discount Leak Detection offers statewide leak detection services in Wyoming. Skilled technicians find water, gas, pool leaks fast, 24/7 emergency response.",
     image: "https://discountleakdetection.com/images/leak-detection-in-wyoming.webp",
     imageAlt: "Plumber uses pliers to fix a kitchen faucet water leak. Expert leak detection and pipe repair.",
-    url: "https://discountleakdetection.com/wyoming",
+    url: "https://discountleakdetection.com/locations/wyoming",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -325,7 +325,7 @@ export const wyomingDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/wyoming",
+      "url": "https://discountleakdetection.com/locations/wyoming",
       "telephone": "+18888759844",
       "priceRange": "$$",
       "address": {
@@ -716,7 +716,7 @@ export const wyomingDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Wyoming",
-          "item": "https://discountleakdetection.com/wyoming"
+          "item": "https://discountleakdetection.com/locations/wyoming"
         }
       ]
     }

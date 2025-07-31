@@ -369,14 +369,14 @@ export const utahDynamicData: StateDynamicData = {
     "UT leak detection services",
     "Discount Leak Detection Utah"
   ],
-  canonicalUrl: "https://discountleakdetection.com/utah",
+  canonicalUrl: "https://discountleakdetection.com/locations/utah",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Utah | Discount Leak Detection",
     description: "Fast leak detection services in Utah for water, gas, pool & slab leaks. Statewide coverage & emergency support. Call Discount Leak Detection now!",
     image: "https://discountleakdetection.com/images/leak-detection-in-utah.webp",
     imageAlt: "Plumbers use tools to find and fix water leaks on a home's water heater pipes.",
-    url: "https://discountleakdetection.com/utah",
+    url: "https://discountleakdetection.com/locations/utah",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -402,7 +402,7 @@ export const utahDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/utah",
+      "url": "https://discountleakdetection.com/locations/utah",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -793,7 +793,7 @@ export const utahDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Utah",
-          "item": "https://discountleakdetection.com/utah"
+          "item": "https://discountleakdetection.com/locations/utah"
         }
       ]
     }

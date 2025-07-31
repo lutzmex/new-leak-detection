@@ -411,14 +411,14 @@ export const illinoisDynamicData: StateDynamicData = {
     "discount leak detection Illinois",
     "statewide leak detection Illinois"
   ],
-  canonicalUrl: "https://discountleakdetection.com/illinois",
+  canonicalUrl: "https://discountleakdetection.com/locations/illinois",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection in Illinois | Discount Leak Detection",
     description: "Top-rated leak detection in Illinois. From Chicago to Springfield, our experts find water, gas & pool leaks fast. Emergency service statewide. Call now!",
     image: "https://discountleakdetection.com/images/leak-detection-in-illinois.webp",
     imageAlt: "Skilled plumbers checking a damaged ceiling for a water leak using moisture detection tools.",
-    url: "https://discountleakdetection.com/illinois",
+    url: "https://discountleakdetection.com/locations/illinois",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -445,7 +445,7 @@ export const illinoisDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/illinois",
+      "url": "https://discountleakdetection.com/locations/illinois",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -836,7 +836,7 @@ export const illinoisDynamicData: StateDynamicData = {
           "@type": "ListItem",
           position: 3,
           name: "Illinois",
-          item: "https://discountleakdetection.com/illinois"
+          item: "https://discountleakdetection.com/locations/illinois"
         }
       ]
     }

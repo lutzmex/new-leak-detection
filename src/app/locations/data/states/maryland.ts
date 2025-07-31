@@ -292,14 +292,14 @@ export const marylandDynamicData: StateDynamicData = {
     "Leak Detection Services Maryland",
     "Discount Leak Detection Maryland"
   ],
-  canonicalUrl: "https://discountleakdetection.com/maryland",
+  canonicalUrl: "https://discountleakdetection.com/locations/maryland",
   robots: "index, follow",
   openGraph: {
     title: "Maryland Leak Detection Services | Discount Leak Detection",
     description: "Expert leak detection in Maryland for water, gas, pool, and slab leaks. Fast response statewide to protect your property. Call +1 (888) 875-9844 now!",
     image: "https://discountleakdetection.com/images/leak-detection-in-maryland.webp",
     imageAlt: "Skilled plumbers detecting a leaky water heater and repairing pipes in a basement. Complete water leak detection.",
-    url: "https://discountleakdetection.com/maryland",
+    url: "https://discountleakdetection.com/locations/maryland",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -326,7 +326,7 @@ export const marylandDynamicData: StateDynamicData = {
       "logo": "https://discountleakdetection.com/logo/logo.webp",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      "url": "https://discountleakdetection.com/maryland",
+      "url": "https://discountleakdetection.com/locations/maryland",
       "telephone": "+1 (888) 875-9844",
       "priceRange": "$$",
       "address": {
@@ -717,7 +717,7 @@ export const marylandDynamicData: StateDynamicData = {
           "@type": "ListItem",
           "position": 3,
           "name": "Maryland",
-          "item": "https://discountleakdetection.com/maryland"
+          "item": "https://discountleakdetection.com/locations/maryland"
         }
       ]
     }

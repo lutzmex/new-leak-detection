@@ -378,14 +378,14 @@ export const indianaDynamicData: StateDynamicData = {
       "sprinkler system leak detection Indiana",
       "smart leak sensor installation Indiana"
     ],
-    canonicalUrl: "https://discountleakdetection.com/indiana",
+    canonicalUrl: "https://discountleakdetection.com/locations/indiana",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Indiana | Discount Leak Detection",
       description: "Fast, affordable leak detection in Indiana. Expert water, gas & pool leak specialists statewide. 24/7 emergency service. Call Discount Leak Detection now!",
       image: "https://discountleakdetection.com/images/leak-detection-in-indiana.webp",
       imageAlt: "Skilled plumbers doing pool leak detection, finding and repairing a leaking pipe near a pool pump.",
-      url: "https://discountleakdetection.com/indiana",
+      url: "https://discountleakdetection.com/locations/indiana",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -411,7 +411,7 @@ export const indianaDynamicData: StateDynamicData = {
         logo: "https://discountleakdetection.com/logo/logo.webp",
         currenciesAccepted: "USD",
         paymentAccepted: "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        url: "https://discountleakdetection.com/indiana",
+        url: "https://discountleakdetection.com/locations/indiana",
         telephone: "+1 (888) 875-9844",
         priceRange: "$$",
         address: {
@@ -802,7 +802,7 @@ export const indianaDynamicData: StateDynamicData = {
             "@type": "ListItem",
             position: 3,
             name: "Indiana",
-            item: "https://discountleakdetection.com/indiana"
+            item: "https://discountleakdetection.com/locations/indiana"
           }
         ]
       }

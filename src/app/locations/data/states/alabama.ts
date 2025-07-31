@@ -307,14 +307,14 @@ export const alabamaDynamicData: StateDynamicData = {
     "Thermal imaging leak detection Alabama",
     "Infrared leak detection Alabama"
   ],
-  canonicalUrl: "https://discountleakdetection.com/alabama",
+  canonicalUrl: "https://discountleakdetection.com/locations/alabama",
   robots: "index, follow",
   openGraph: {
     title: "Leak Detection Services in Alabama | Discount Leak Detection",
     description: "Get fast, same-day leak detection services statewide in Alabama. Our expert team locates water, pool, gas, and slab leaks with minimal damage. Call now!",
     image: "https://discountleakdetection.com/images/leak-detection-in-alabama.webp",
     imageAlt: "Plumbers find and fix pipe leaks. Expert plumbers check pipes to stop water damage.",
-    url: "https://discountleakdetection.com/alabama",
+    url: "https://discountleakdetection.com/locations/alabama",
     type: "website",
     siteName: "Discount Leak Detection"
   },
@@ -340,7 +340,7 @@ export const alabamaDynamicData: StateDynamicData = {
       logo: "https://discountleakdetection.com/logo/logo.webp",
       currenciesAccepted: "USD",
       paymentAccepted: "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-      url: "https://discountleakdetection.com/alabama",
+      url: "https://discountleakdetection.com/locations/alabama",
       telephone: "+1 (888) 875-9844",
       priceRange: "$$",
       address: {
@@ -423,7 +423,7 @@ export const alabamaDynamicData: StateDynamicData = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://discountleakdetection.com" },
         { "@type": "ListItem", position: 2, name: "Locations", item: "https://discountleakdetection.com/locations" },
-        { "@type": "ListItem", position: 3, name: "Alabama", item: "https://discountleakdetection.com/alabama" }
+        { "@type": "ListItem", position: 3, name: "Alabama", item: "https://discountleakdetection.com/locations/alabama" }
       ]
     }
   },

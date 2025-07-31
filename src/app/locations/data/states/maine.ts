@@ -368,14 +368,14 @@ export const maineDynamicData: StateDynamicData = {
       "Maine emergency plumbing",
       "best leak detection Maine"
     ],
-    canonicalUrl: "https://discountleakdetection.com/maine",
+    canonicalUrl: "https://discountleakdetection.com/locations/maine",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Maine | Discount Leak Detection",
       description: "Get fast, accurate leak detection services in Maine. From Portland to Presque Isle, our family-owned team finds & fixes water, gas & pool leaks. Call now!",
       image: "https://discountleakdetection.com/images/leak-detection-in-maine.webp",
       imageAlt: "Plumbers use acoustic leak detection tools to find and repair bathroom pipe leaks.",
-      url: "https://discountleakdetection.com/maine",
+      url: "https://discountleakdetection.com/locations/maine",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -401,7 +401,7 @@ export const maineDynamicData: StateDynamicData = {
         "logo": "https://discountleakdetection.com/logo/logo.webp",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        "url": "https://discountleakdetection.com/maine",
+        "url": "https://discountleakdetection.com/locations/maine",
         "telephone": "+1 (888) 875-9844",
         "priceRange": "$$",
         "address": {
@@ -797,7 +797,7 @@ export const maineDynamicData: StateDynamicData = {
             "@type": "ListItem",
             "position": 3,
             "name": "Maine",
-            "item": "https://discountleakdetection.com/maine"
+            "item": "https://discountleakdetection.com/locations/maine"
           }
         ]
       }

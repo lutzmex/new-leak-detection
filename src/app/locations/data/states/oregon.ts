@@ -353,14 +353,14 @@ export const oregonDynamicData: StateDynamicData = {
       "commercial leak detection Oregon",
       "Oregon leak detection company"
     ],
-    canonicalUrl: "https://discountleakdetection.com/oregon",
+    canonicalUrl: "https://discountleakdetection.com/locations/oregon",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Oregon | Discount Leak Detection",
       description: "Need fast, affordable leak detection in Oregon? Our experts locate water, gas, pool & slab leaks statewide with non-invasive tools and transparent pricing.",
       image: "https://discountleakdetection.com/images/leak-detection-in-oregon.webp",
       imageAlt: "Plumbers detect water leaks at a house at night. They use a hose and pump for pressure testing pipes to find underground leaks.",
-      url: "https://discountleakdetection.com/oregon",
+      url: "https://discountleakdetection.com/locations/oregon",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -386,7 +386,7 @@ export const oregonDynamicData: StateDynamicData = {
         "logo": "https://discountleakdetection.com/logo/logo.webp",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        "url": "https://discountleakdetection.com/oregon",
+        "url": "https://discountleakdetection.com/locations/oregon",
         "telephone": "+1 (888) 875-9844",
         "priceRange": "$$",
         "address": {
@@ -777,7 +777,7 @@ export const oregonDynamicData: StateDynamicData = {
             "@type": "ListItem",
             "position": 3,
             "name": "Oregon",
-            "item": "https://discountleakdetection.com/oregon"
+            "item": "https://discountleakdetection.com/locations/oregon"
           }
         ]
       }

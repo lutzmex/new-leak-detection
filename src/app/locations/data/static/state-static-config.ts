@@ -190,7 +190,7 @@ export const STATE_STATIC_CONFIG = {
 
   // Trust Platforms - ✅ UPDATED - Better alt text for accessibility
   trustPlatforms: {
-    title: 'Trusted on these platforms',
+    title: 'Trusted by customers on these platforms',
     platforms: [
       { src: '/icon/google.svg', alt: 'Google review platform logo' },
       { src: '/icon/yelp.svg', alt: 'Yelp review platform logo' },

@@ -336,14 +336,14 @@ export const arkansasDynamicData: StateDynamicData = {
       "thermal imaging leak detection Arkansas",
       "Arkansas plumbing leak detection"
     ],
-    canonicalUrl: "https://discountleakdetection.com/arkansas",
+    canonicalUrl: "https://discountleakdetection.com/locations/arkansas",
     robots: "index, follow",
     openGraph: {
       title: "Leak Detection Services in Arkansas | Discount Leak Detection",
       description: "Fast, reliable leak detection services in Arkansas. Water, gas, slab & pool specialists with same-day service and 24/7 emergency response statewide.",
       image: "https://discountleakdetection.com/images/leak-detection-in-arkansas.webp",
       imageAlt: "Expert plumbers doing outdoor water leak detection and repair, with a burst irrigation pipe spraying water.",
-      url: "https://discountleakdetection.com/arkansas",
+      url: "https://discountleakdetection.com/locations/arkansas",
       type: "website",
       siteName: "Discount Leak Detection"
     },
@@ -369,7 +369,7 @@ export const arkansasDynamicData: StateDynamicData = {
         "logo": "https://discountleakdetection.com/logo/logo.webp",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Check",
-        "url": "https://discountleakdetection.com/arkansas",
+        "url": "https://discountleakdetection.com/locations/arkansas",
         "telephone": "+1 (888) 875-9844",
         "priceRange": "$$",
         "address": {
@@ -765,7 +765,7 @@ export const arkansasDynamicData: StateDynamicData = {
             "@type": "ListItem",
             "position": 3,
             "name": "Arkansas",
-            "item": "https://discountleakdetection.com/arkansas"
+            "item": "https://discountleakdetection.com/locations/arkansas"
           }
         ]
       }
